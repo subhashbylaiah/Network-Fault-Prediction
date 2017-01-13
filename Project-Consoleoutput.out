@@ -1,0 +1,235 @@
+
+Processing Data.....
+Done!
+Running Classification Algorithms...
+###################################################################################################################
+Learning XGBoost Model
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0    1
+fault_severity          
+0               849  109
+1               179  340
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.83      0.89      0.85       958
+          1       0.76      0.66      0.70       519
+
+avg / total       0.80      0.81      0.80      1477
+
+Accuracy  : 80.501%
+ROC Score:0.874223152763
+True Positive Rate: 0.655106, False Positive Rate: 0.113779
+Time taken:  53.0480070114
+###################################################################################################################
+###################################################################################################################
+Learning Random Forest Model
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0    1
+fault_severity          
+0               880   78
+1               246  273
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.78      0.92      0.84       958
+          1       0.78      0.53      0.63       519
+
+avg / total       0.78      0.78      0.77      1477
+
+Accuracy  : 78.064%
+ROC Score:0.83495440485
+True Positive Rate: 0.526012, False Positive Rate: 0.081420
+Time taken:  3.02816820145
+###################################################################################################################
+###################################################################################################################
+Learning SVM Model
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0   1
+fault_severity         
+0               859  99
+1               423  96
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.67      0.90      0.77       958
+          1       0.49      0.18      0.27       519
+
+avg / total       0.61      0.65      0.59      1477
+
+Accuracy  : 64.658%
+ROC Score:0.663096689072
+True Positive Rate: 0.184971, False Positive Rate: 0.103340
+Time taken:  13.21311903
+###################################################################################################################
+###################################################################################################################
+Simple Decision Tree (All Features), Depth: 5
+============		Confusion matrix	============
+
+                      Actual False         Actual True      
+
+ Predicted False          623                  335          
+
+  Predicted True          217                  302          
+
+Correctly classified examples: 925 	Misclassified examples: 552
+
+Accuracy on test set 62.6269465132 %
+TPR:  58.1888246628 %
+FPR:  34.9686847599 %
+62.6269465132
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0    1
+fault_severity          
+0               623  335
+1               217  302
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.74      0.65      0.69       958
+          1       0.47      0.58      0.52       519
+
+avg / total       0.65      0.63      0.63      1477
+
+Accuracy  : 62.627%
+ROC Score:0.616100699514
+True Positive Rate: 0.581888, False Positive Rate: 0.349687
+Time taken:  32.5539860725
+###################################################################################################################
+Ada Boosted Decision Tree (Top selected Features), Depth: 10, Numbed Trees:1
+############ Top selected features ################
+============		Confusion matrix	============
+
+                      Actual False         Actual True      
+
+ Predicted False          623                  335          
+
+  Predicted True          217                  302          
+
+Correctly classified examples: 925 	Misclassified examples: 552
+
+Accuracy on test set 62.6269465132 %
+TPR:  58.1888246628 %
+FPR:  34.9686847599 %
+62.6269465132
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0    1
+fault_severity          
+0               623  335
+1               217  302
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.74      0.65      0.69       958
+          1       0.47      0.58      0.52       519
+
+avg / total       0.65      0.63      0.63      1477
+
+Accuracy  : 62.627%
+ROC Score:0.616100699514
+True Positive Rate: 0.581888, False Positive Rate: 0.349687
+Time taken:  12.0937139988
+###################################################################################################################
+###################################################################################################################
+Learning Adaboost Trees (Top selected Features), Depth: 5, NumTrees: 5
+############ Top selected features ################
+============		Confusion matrix	============
+
+                      Actual False         Actual True      
+
+ Predicted False          623                  335          
+
+  Predicted True          217                  302          
+
+Correctly classified examples: 925 	Misclassified examples: 552
+
+Accuracy on test set 62.6269465132 %
+TPR:  58.1888246628 %
+FPR:  34.9686847599 %
+62.6269465132
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0    1
+fault_severity          
+0               623  335
+1               217  302
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.74      0.65      0.69       958
+          1       0.47      0.58      0.52       519
+
+avg / total       0.65      0.63      0.63      1477
+
+Accuracy  : 62.627%
+ROC Score:0.616100699514
+True Positive Rate: 0.581888, False Positive Rate: 0.349687
+Time taken:  25.7736539841
+###################################################################################################################
+###################################################################################################################
+Learning Adaboost Trees (Top selected Features), Depth:1, NumTrees: 10
+############ Top selected features ################
+============		Confusion matrix	============
+
+                      Actual False         Actual True      
+
+ Predicted False          732                  226          
+
+  Predicted True          199                  320          
+
+Correctly classified examples: 1052 	Misclassified examples: 425
+
+Accuracy on test set 71.2254570074 %
+TPR:  61.6570327553 %
+FPR:  23.5908141962 %
+71.2254570074
+
+############-Model Report-################
+Confusion Matrix:
+col_0             0    1
+fault_severity          
+0               732  226
+1               199  320
+Note: rows - actual; col - predicted
+
+###########-Classification Report-########
+             precision    recall  f1-score   support
+
+          0       0.79      0.76      0.78       958
+          1       0.59      0.62      0.60       519
+
+avg / total       0.72      0.71      0.71      1477
+
+Accuracy  : 71.225%
+ROC Score:0.690331092795
+True Positive Rate: 0.616570, False Positive Rate: 0.235908
+Time taken:  2.95902490616
+###################################################################################################################
+done
+Done!
+
+Process finished with exit code 0
+
